@@ -37,6 +37,12 @@ bazel_dep(name = "with_cfg.bzl", version = "0.2.4")
 bazel_dep(name = "remoteapis", version = "")
 bazel_dep(name = "googleapis", version = "")
 
+archive_override(
+    module_name = "rules_java",
+    strip_prefix = "rules_java-dac6d9258500165ce1c9aa22644ed16a26b89eab",
+    urls = ["https://github.com/bazelbuild/rules_java/archive/dac6d9258500165ce1c9aa22644ed16a26b89eab.tar.gz"],
+)
+
 single_version_override(
     module_name = "rules_jvm_external",
     patch_strip = 1,
