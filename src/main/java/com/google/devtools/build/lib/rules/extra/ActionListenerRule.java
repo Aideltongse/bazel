@@ -51,7 +51,6 @@ public final class ActionListenerRule implements RuleDefinition {
         .removeAttribute(":action_listener")
         .build();
   }
-
   @Override
   public Metadata getMetadata() {
     return RuleDefinition.Metadata.builder()
